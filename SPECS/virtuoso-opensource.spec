@@ -25,7 +25,7 @@ make
  
 %install
 make install DESTDIR=%{buildroot}
-mkdir -p %{buildroot}/{etc/init.d/,var/log/virtuoso,etc/logrotate.d}
+mkdir -p %{buildroot}/{etc/init.d/,var/log/virtuoso,etc/logrotate.d,etc/systemd/system}
 cp tf-addons/virtuoso.service  "%{buildroot}/etc/systemd/system/virtuoso.service"
 cp tf-addons/virtuoso.logrotate "%{buildroot}/etc/logrotate.d/virtuoso"
 sed -i 's/\/var\/lib\/virtuoso\/db\/virtuoso.log/\/var\/log\/virtuoso\/database.log/' %{buildroot}/var/lib/virtuoso/db/virtuoso.ini
