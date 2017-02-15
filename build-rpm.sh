@@ -18,7 +18,7 @@ then
 else
     echo "Error: Could not find a suitable configure file to determine the version"
     exit 1
-if
+fi
 
 VIRT_VERSION_MAJ=`grep -o -P 'vos_major,\s+\[[0-9]+\]' $CONFIGURE_IN | grep -o -P '[0-9]+'`
 VIRT_VERSION_MIN=`grep -o -P 'vos_minor,\s+\[[0-9]+\]' $CONFIGURE_IN | grep -o -P '[0-9]+'`
