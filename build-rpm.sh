@@ -1,4 +1,4 @@
-#!/bin/bash -v
+#!/bin/bash
  
 ## get latest code on specified branch
 ## and extract version info
