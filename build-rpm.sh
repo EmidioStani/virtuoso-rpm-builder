@@ -10,8 +10,10 @@ git pull
 
 
 if [ -e "configure.ac" ]
+then
     CONFIGURE_IN="configure.ac"
 elif [ -e "configure.in" ]
+then
     CONFIGURE_IN="configure.in"
 else
     echo "Error: Could not find a suitable configure file to determine the version"
